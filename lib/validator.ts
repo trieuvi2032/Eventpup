@@ -12,6 +12,7 @@ export const eventFormSchema = z.object({
     .max(400, "Location Must be at most 400 characters"),
   imageUrl: z.string(),
   startDateTime: z.date(),
+  endDateTime: z.date(),
   categoryId: z.string(),
   price: z.string(),
   isFree: z.boolean(),
