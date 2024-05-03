@@ -1,6 +1,10 @@
 import { Document, Schema, model, models } from "mongoose";
 
 export interface ICategory extends Document {
+  map(
+    arg0: (category: any) => import("react").JSX.Element
+  ): import("react").ReactNode;
+  length: number;
   _id: string;
   name: string;
 }
